@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "Pages",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "sections": {
+      "collection": "sections"
+    },
+    "navigation": {
+      "type": "enumeration",
+      "enum": [
+        "nav_pre",
+        "nav_main",
+        "nav_footer"
+      ]
+    },
+    "hide_navigation": {
+      "type": "boolean"
+    },
+    "hero_background": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "hero_text": {
+      "type": "richtext"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "tags": {
+      "collection": "tag"
+    }
+  }
+}

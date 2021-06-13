@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "angebotes",
+  "info": {
+    "name": "offers",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "start_date": {
+      "type": "datetime"
+    },
+    "short_description": {
+      "type": "richtext"
+    },
+    "end_date": {
+      "type": "datetime"
+    }
+  }
+}

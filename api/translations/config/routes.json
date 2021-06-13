@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/translations",
+      "handler": "translations.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/translations",
+      "handler": "translations.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/translations",
+      "handler": "translations.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_form_form_fields",
+  "info": {
+    "name": "Form Field",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "placeholder": {
+      "type": "string"
+    },
+    "help_text": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "input",
+        "textfield",
+        "password",
+        "checkbox",
+        "email"
+      ]
+    },
+    "is_required": {
+      "type": "boolean"
+    },
+    "entity": {
+      "type": "string"
+    }
+  }
+}

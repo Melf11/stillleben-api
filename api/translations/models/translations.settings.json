@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "translations",
+  "info": {
+    "name": "translations",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "de": {
+      "type": "json"
+    }
+  }
+}

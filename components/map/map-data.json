@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_map_map_data",
+  "info": {
+    "name": "map_data",
+    "icon": "map-marked-alt",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "longitude": {
+      "type": "string"
+    },
+    "latitude": {
+      "type": "string"
+    },
+    "api_key": {
+      "type": "string"
+    },
+    "marker_text": {
+      "type": "richtext"
+    }
+  }
+}

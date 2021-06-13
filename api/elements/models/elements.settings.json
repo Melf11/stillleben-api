@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "elements",
+  "info": {
+    "name": "Elements",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "is_single_page_element": {
+      "type": "boolean"
+    },
+    "map_data": {
+      "type": "component",
+      "repeatable": false,
+      "component": "map.map-data"
+    },
+    "forms": {
+      "collection": "forms"
+    },
+    "is_highlighted": {
+      "type": "boolean"
+    },
+    "position": {
+      "type": "integer"
+    },
+    "offers": {
+      "collection": "angebote"
+    }
+  }
+}
